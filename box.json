@@ -1,0 +1,83 @@
+{
+    "name":"CFBarbecue",
+    "version":"0.1.0",
+    "author":"O.C. Tanner",
+    "location":"octanner/cfbarbecue",
+    "packageDirectory":"",
+    "homepage":"",
+    "documentation":"",
+    "repository":{
+        "type":"",
+        "URL":""
+    },
+    "bugs":"",
+    "slug":"cfbarbecue",
+    "shortDescription":"Wrapper around Barbecue - a Java barcode printing library",
+    "type":"modules",
+    "keywords":[
+        "barcodes",
+        "barbecue"
+    ],
+    "private":false,
+    "engines":[
+        {
+            "type":"",
+            "version":""
+        }
+    ],
+    "defaultEngine":"",
+    "defaultPort":0,
+    "projectURL":"",
+    "license":[
+        {
+            "type":"",
+            "URL":""
+        }
+    ],
+    "contributors":[
+        "Eric Peterson (elpete)"
+    ],
+    "dependencies":{
+        "cbjavaloader":"^1.1.0+00002"
+    },
+    "devDependencies":{
+        
+    },
+    "installPaths":{
+        "cbjavaloader":"modules/cbjavaloader"
+    },
+    "ignore":[
+        "**/.*",
+        "test",
+        "tests"
+    ],
+    "testbox":{
+        "runner":[
+            {
+                "default":""
+            }
+        ],
+        "labels":[
+            
+        ],
+        "reporter":"",
+        "reporterResults":"",
+        "bundles":[
+            ""
+        ],
+        "directory":{
+            "mapping":"",
+            "recurse":true
+        },
+        "watchers":[
+            
+        ],
+        "notify":{
+            "emails":[
+                
+            ],
+            "growl":"",
+            "URL":""
+        }
+    }
+}
