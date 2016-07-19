@@ -29,7 +29,26 @@ component {
         cfimage( action = "writeToBrowser", source = generate() );
     }
 
-    function code128( required string data, struct options = variables.defaultOptions ) {
+    function setDefault( required string key, required any value ) {
+        if ( structKeyExists( defaultOptions, key) ) {
+            defaultOptions[ key ] = value;
+        }
+        return this;
+    }
+
+    function setDefaults( struct newDefaults = {} ) {
+        for (var key in structKeyArray( newDefaults ) ) {
+            setDefault( key, newDefaults[ key ] );
+        }
+        return this;
+    }
+
+    function setDefaultResolution( required numeric resolution ) {
+        return setDefault( "resolution", resolution );
+    }
+
+    function code128( required string data, struct options = {} ) {
+        structAppend( options, variables.defaultOptions, false );
         variables.barcode = wirebox.getInstance(
             dsl = "javaloader:net.sourceforge.barbecue.linear.code128.Code128Barcode"
         ).init( arguments.data );
