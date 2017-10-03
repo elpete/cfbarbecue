@@ -1,8 +1,8 @@
 {
     "name":"CFBarbecue",
-    "version":"0.2.0",
+    "version":"0.2.1",
     "author":"O.C. Tanner",
-    "location":"octanner/cfbarbecue#v0.2.0",
+    "location":"octanner/cfbarbecue#v0.2.1",
     "packageDirectory":"",
     "homepage":"",
     "documentation":"",
@@ -43,7 +43,7 @@
         "Eric Peterson (elpete)"
     ],
     "dependencies":{
-        "cbjavaloader":"^1.1.0+00002"
+        "cbjavaloader":"1.3.3"
     },
     "devDependencies":{
         
